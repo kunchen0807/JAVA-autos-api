@@ -1,0 +1,54 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kc-simple-autos
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: kc-simple-autos
+  template:
+    metadata:
+      labels:
+        app: kc-simple-autos
+    spec:
+      containers:
+        # Be sure to get this exact from your repository
+#        - image: justinchen87/kc-simple-autos:v4
+        - image: $IMAGE
+          name: kc-simple-autos
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 8080
+          env:
+            - name: DB_HOST
+              valueFrom:
+                secretKeyRef:
+                  name: kc-db-secret
+                  key: DB_HOST
+            - name: DB_NAME
+              valueFrom:
+                secretKeyRef:
+                  name: kc-db-secret
+                  key: DB_NAME
+            - name: DB_USER
+              valueFrom:
+                secretKeyRef:
+                  name: kc-db-secret
+                  key: DB_USER
+            - name: DB_PWD
+              valueFrom:
+                secretKeyRef:
+                  name: kc-db-secret
+                  key: DB_PWD
+            # You can also specify environment variables inline
+            # - name: DB_HOST
+            #   value: 52.26.72.203
+            # - name: DB_NAME
+            #   value: my_cool_db
+            # - name: DB_USER
+            #   value: my_user
+            # - name: DB_PWD
+            #   value: my_user_pwd
+      imagePullSecrets: # Be sure the token name matches what you created on K8s
+        - name: kc-simple-autos-deploy-token

@@ -1,0 +1,52 @@
+plugins {
+	id 'org.springframework.boot' version '2.7.2'
+	id 'io.spring.dependency-management' version '1.0.12.RELEASE'
+	id 'java'
+}
+
+group = 'com.galvanize'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '11'
+
+repositories {
+	mavenCentral()
+	maven { url 'https://repo.spring.io/snapshot' }
+	maven { url 'https://repo.spring.io/milestone' }
+}
+
+ext {
+	set('springCloudVersion', "2021.0.3-SNAPSHOT")
+}
+
+dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	testRuntimeOnly 'com.h2database:h2'
+	implementation group: 'mysql', name: 'mysql-connector-java', version: '8.0.30'
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	implementation group: 'org.apache.httpcomponents', name: 'httpclient', version: '4.5.13'
+	implementation 'org.postgresql:postgresql:42.3.6'
+
+	implementation 'org.springframework.boot:spring-boot-starter-actuator'
+	// Include ALL of the Kubernetes for Spring cloud.
+	implementation 'org.springframework.cloud:spring-cloud-starter-kubernetes-fabric8-all'
+
+}
+
+tasks.named('test') {
+	useJUnitPlatform()
+}
+
+jar {
+	enabled = false
+	manifest {
+		attributes('Main-Class': 'com.my.thing.FileWithMainMethod')
+	}
+}
+
+dependencyManagement {
+	imports {
+		// Imports the proper dependencies for your spring cloud version
+		mavenBom "org.springframework.cloud:spring-cloud-dependencies:${springCloudVersion}"
+	}
+}

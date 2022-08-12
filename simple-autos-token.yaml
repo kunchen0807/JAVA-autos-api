@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Secret
+metadata:
+  name: kc-simple-autos-deploy-token
+type: docker-registry
+data:
+  docker-username: Z2l0bGFiK2RlcGxveS10b2tlbi0xMjYyNTkz
+  docker-password: eFdGSjc1TnpiQlNyOHFhSmF4cm8=
+  docker-email: anVzdGluY2hlbjkzODdAZ21haWwuY29t
+  docker-server: cmVnaXN0cnkuZ2l0bGFiLmNvbQ==

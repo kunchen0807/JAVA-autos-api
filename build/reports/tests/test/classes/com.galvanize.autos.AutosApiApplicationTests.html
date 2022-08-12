@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - AutosApiApplicationTests</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>AutosApiApplicationTests</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.galvanize.autos.html">com.galvanize.autos</a> &gt; AutosApiApplicationTests</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">10</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.480s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">addAuto_returnsNewAutoDetails()</td>
+<td class="success">0.016s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">contextLoads()</td>
+<td class="success">0.012s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">getAutos_exists_returnsAutosList()</td>
+<td class="success">0.028s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">getAutos_search_returnsAutosList()</td>
+<td class="success">0.012s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">getAutos_search_returnsNoContent()</td>
+<td class="success">0.015s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">getAutos_search_withOnlyColor_returnsAutosList()</td>
+<td class="success">0.045s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">getAutos_search_withOnlyColor_returnsNoContent()</td>
+<td class="success">0.284s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">getAutos_search_withOnlyMake_returnsAutosList()</td>
+<td class="success">0.015s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">getAutos_search_withOnlyMake_returnsNoContent()</td>
+<td class="success">0.017s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">updateAuto_returnsAutoDetails()</td>
+<td class="success">0.036s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>16:56:43.828 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+16:56:43.833 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+16:56:43.847 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [com.galvanize.autos.AutosApiApplicationTests] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
+16:56:43.852 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.galvanize.autos.AutosApiApplicationTests], using SpringBootContextLoader
+16:56:43.854 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.galvanize.autos.AutosApiApplicationTests]: class path resource [com/galvanize/autos/AutosApiApplicationTests-context.xml] does not exist
+16:56:43.854 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.galvanize.autos.AutosApiApplicationTests]: class path resource [com/galvanize/autos/AutosApiApplicationTestsContext.groovy] does not exist
+16:56:43.854 [Test worker] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.galvanize.autos.AutosApiApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+16:56:43.854 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.galvanize.autos.AutosApiApplicationTests]: AutosApiApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+16:56:43.875 [Test worker] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.galvanize.autos.AutosApiApplicationTests]
+16:56:43.901 [Test worker] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [/Users/kunchen/Documents/VMwareAscentProgram/autos/build/classes/java/main/com/galvanize/autos/AutosApiApplication.class]
+16:56:43.907 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.galvanize.autos.AutosApiApplication for test class com.galvanize.autos.AutosApiApplicationTests
+16:56:43.953 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [com.galvanize.autos.AutosApiApplicationTests]: using defaults.
+16:56:43.954 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+16:56:43.960 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@71ea1fda, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@62b3df3a, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@420745d7, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@7e11ab3d, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@5fa47fea, org.springframework.test.context.support.DirtiesContextTestExecutionListener@2392212b, org.springframework.test.context.transaction.TransactionalTestExecutionListener@5b43e173, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@28f8e165, org.springframework.test.context.event.EventPublishingTestExecutionListener@545f80bf, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@66f66866, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@22fa55b2, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@4d666b41, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@6594402a, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@30f4b1a6, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@405325cf]
+16:56:43.962 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@7d2a6eac testClass = AutosApiApplicationTests, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@18ca3c62 testClass = AutosApiApplicationTests, locations = '{}', classes = '{class com.galvanize.autos.AutosApiApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{classpath:application-test.properties}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=0}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@44828f6b, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@4b3c354a, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@21aa6d6c, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@6b5894c8, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@74cadd41, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@3336e6b6], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -&gt; false]], class annotated with @DirtiesContext [false] with mode [null].
+16:56:43.967 [Test worker] DEBUG org.springframework.test.context.support.DependencyInjectionTestExecutionListener - Performing dependency injection for test context [[DefaultTestContext@7d2a6eac testClass = AutosApiApplicationTests, testInstance = com.galvanize.autos.AutosApiApplicationTests@718607eb, testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@18ca3c62 testClass = AutosApiApplicationTests, locations = '{}', classes = '{class com.galvanize.autos.AutosApiApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{classpath:application-test.properties}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=0}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@44828f6b, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@4b3c354a, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@21aa6d6c, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@6b5894c8, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@74cadd41, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@3336e6b6], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -&gt; false, 'org.springframework.test.context.event.ApplicationEventsTestExecutionListener.recordApplicationEvents' -&gt; false]]].
+2022-08-11 16:56:45.097  WARN 61092 --- [    Test worker] ubernetesProfileEnvironmentPostProcessor : Not running inside kubernetes. Skipping 'kubernetes' profile activation.
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.7.2)
+
+2022-08-11 16:56:45.500  WARN 61092 --- [    Test worker] ubernetesProfileEnvironmentPostProcessor : Not running inside kubernetes. Skipping 'kubernetes' profile activation.
+2022-08-11 16:56:45.501  INFO 61092 --- [    Test worker] c.g.autos.AutosApiApplicationTests       : No active profile set, falling back to 1 default profile: &quot;default&quot;
+2022-08-11 16:56:45.803  INFO 61092 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-08-11 16:56:45.886  INFO 61092 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 78 ms. Found 1 JPA repository interfaces.
+2022-08-11 16:56:45.991  INFO 61092 --- [    Test worker] o.s.cloud.context.scope.GenericScope     : BeanFactory id=075c2e7d-727f-3c2d-bb59-cc76f9da1c25
+2022-08-11 16:56:46.217  INFO 61092 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2022-08-11 16:56:46.223  INFO 61092 --- [    Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-08-11 16:56:46.223  INFO 61092 --- [    Test worker] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-08-11 16:56:46.278  INFO 61092 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-08-11 16:56:46.278  INFO 61092 --- [    Test worker] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 775 ms
+2022-08-11 16:56:46.485  INFO 61092 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-08-11 16:56:46.505  INFO 61092 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.10.Final
+2022-08-11 16:56:46.600  INFO 61092 --- [    Test worker] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-08-11 16:56:46.644  INFO 61092 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-08-11 16:56:46.750  INFO 61092 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-08-11 16:56:46.761  INFO 61092 --- [    Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-08-11 16:56:47.025  INFO 61092 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-08-11 16:56:47.029  INFO 61092 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-08-11 16:56:47.240  WARN 61092 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-08-11 16:56:48.178  WARN 61092 --- [    Test worker] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2022-08-11 16:56:48.181  INFO 61092 --- [    Test worker] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-08-11 16:56:48.265  INFO 61092 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 55988 (http) with context path ''
+2022-08-11 16:56:48.279  INFO 61092 --- [    Test worker] c.g.autos.AutosApiApplicationTests       : Started AutosApiApplicationTests in 4.292 seconds (JVM running for 4.867)
+2022-08-11 16:56:48.447  INFO 61092 --- [o-auto-1-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-08-11 16:56:48.448  INFO 61092 --- [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-08-11 16:56:48.448  INFO 61092 --- [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+Automobile{year='2020', make=Audi', model=Quatro', color=Black', owner=null', vin=QQZZAA55'}
+Automobile{year='2000', make=Dodge', model=Viper', color=Black', owner=null', vin=VVBBXX312'}
+Automobile{year='1967', make=Ford', model=Mustang', color=Black', owner=null', vin=AABBCC351'}
+Automobile{year='1967', make=Ford', model=Mustang', color=Black', owner=null', vin=AABBCC429'}
+Automobile{year='2000', make=Dodge', model=Viper', color=Black', owner=null', vin=VVBBXX456'}
+Automobile{year='1967', make=Ford', model=Mustang', color=Yellow', owner=null', vin=AABBCC0'}
+Automobile{year='2020', make=Audi', model=Quatro', color=Orange', owner=null', vin=QQZZAA11'}
+Automobile{year='2000', make=Dodge', model=Viper', color=Orange', owner=null', vin=VVBBXX24'}
+Automobile{year='1967', make=Ford', model=Mustang', color=Root Beer', owner=null', vin=AABBCC39'}
+Automobile{year='2000', make=Dodge', model=Viper', color=Root Beer', owner=null', vin=VVBBXX48'}
+Automobile{year='2020', make=Audi', model=Quatro', color=Blue', owner=null', vin=QQZZAA55'}
+Automobile{year='1967', make=Ford', model=Mustang', color=Root Beer', owner=null', vin=AABBCC78'}
+Automobile{year='2020', make=Audi', model=Quatro', color=Amber', owner=null', vin=QQZZAA77'}
+Automobile{year='2000', make=Dodge', model=Viper', color=Root Beer', owner=null', vin=VVBBXX96'}
+Automobile{year='1967', make=Ford', model=Mustang', color=Orange', owner=null', vin=AABBCC117'}
+Automobile{year='2000', make=Dodge', model=Viper', color=Yellow', owner=null', vin=VVBBXX120'}
+Automobile{year='2020', make=Audi', model=Quatro', color=Green', owner=null', vin=QQZZAA121'}
+Automobile{year='1967', make=Ford', model=Mustang', color=Yellow', owner=null', vin=AABBCC156'}
+Automobile{year='2020', make=Audi', model=Quatro', color=Red', owner=null', vin=QQZZAA143'}
+Automobile{year='2000', make=Dodge', model=Viper', color=Red', owner=null', vin=VVBBXX168'}
+Automobile{year='1967', make=Ford', model=Mustang', color=Black', owner=null', vin=AABBCC195'}
+Automobile{year='2000', make=Dodge', model=Viper', color=Green', owner=null', vin=VVBBXX192'}
+Automobile{year='2020', make=Audi', model=Quatro', color=Yellow', owner=null', vin=QQZZAA187'}
+Automobile{year='1967', make=Ford', model=Mustang', color=Blue', owner=null', vin=AABBCC234'}
+Automobile{year='2020', make=Audi', model=Quatro', color=Magenta', owner=null', vin=QQZZAA209'}
+Automobile{year='2000', make=Dodge', model=Viper', color=Red', owner=null', vin=VVBBXX240'}
+Automobile{year='1967', make=Ford', model=Mustang', color=Green', owner=null', vin=AABBCC273'}
+Automobile{year='2000', make=Dodge', model=Viper', color=Blue', owner=null', vin=VVBBXX264'}
+Automobile{year='2020', make=Audi', model=Quatro', color=Orange', owner=null', vin=QQZZAA253'}
+Automobile{year='1967', make=Ford', model=Mustang', color=Magenta', owner=null', vin=AABBCC312'}
+Automobile{year='2020', make=Audi', model=Quatro', color=Black', owner=null', vin=QQZZAA275'}
+Automobile{year='2000', make=Dodge', model=Viper', color=Amber', owner=null', vin=VVBBXX312'}
+Automobile{year='1967', make=Ford', model=Mustang', color=Amber', owner=null', vin=AABBCC351'}
+Automobile{year='2000', make=Dodge', model=Viper', color=Root Beer', owner=null', vin=VVBBXX336'}
+Automobile{year='2020', make=Audi', model=Quatro', color=Black', owner=null', vin=QQZZAA319'}
+Automobile{year='1967', make=Ford', model=Mustang', color=Root Beer', owner=null', vin=AABBCC390'}
+Automobile{year='2020', make=Audi', model=Quatro', color=Brown', owner=null', vin=QQZZAA341'}
+Automobile{year='2000', make=Dodge', model=Viper', color=Red', owner=null', vin=VVBBXX384'}
+Automobile{year='1967', make=Ford', model=Mustang', color=Green', owner=null', vin=AABBCC429'}
+Automobile{year='2000', make=Dodge', model=Viper', color=Red', owner=null', vin=VVBBXX408'}
+Automobile{year='2020', make=Audi', model=Quatro', color=Yellow', owner=null', vin=QQZZAA385'}
+Automobile{year='1967', make=Ford', model=Mustang', color=Amber', owner=null', vin=AABBCC468'}
+Automobile{year='2020', make=Audi', model=Quatro', color=Brown', owner=null', vin=QQZZAA407'}
+Automobile{year='2000', make=Dodge', model=Viper', color=Amber', owner=null', vin=VVBBXX456'}
+Automobile{year='1967', make=Ford', model=Mustang', color=Root Beer', owner=null', vin=AABBCC507'}
+Automobile{year='2000', make=Dodge', model=Viper', color=Green', owner=null', vin=VVBBXX480'}
+Automobile{year='2020', make=Audi', model=Quatro', color=Magenta', owner=null', vin=QQZZAA451'}
+Automobile{year='1967', make=Ford', model=Mustang', color=Yellow', owner=null', vin=AABBCC546'}
+Automobile{year='2020', make=Audi', model=Quatro', color=Brown', owner=null', vin=QQZZAA473'}
+Automobile{year='2000', make=Dodge', model=Viper', color=Yellow', owner=null', vin=VVBBXX528'}
+Automobile{year='1967', make=Ford', model=Mustang', color=Blue', owner=null', vin=AABBCC585'}
+Automobile{year='2000', make=Dodge', model=Viper', color=Brown', owner=null', vin=VVBBXX552'}
+Automobile{year='2020', make=Audi', model=Quatro', color=Brown', owner=null', vin=QQZZAA517'}
+Automobile{year='1967', make=Ford', model=Mustang', color=Blue', owner=null', vin=AABBCC624'}
+Automobile{year='2020', make=Audi', model=Quatro', color=Orange', owner=null', vin=QQZZAA539'}
+Automobile{year='2020', make=Audi', model=Quatro', color=White', owner=Kun', vin=QQZZAA209'}
+Automobile{year='2000', make=Dodge', model=Viper', color=Black', owner=null', vin=VVBBXX24'}
+Automobile{year='2000', make=Dodge', model=Viper', color=Root Beer', owner=null', vin=VVBBXX48'}
+Automobile{year='2000', make=Dodge', model=Viper', color=Brown', owner=null', vin=VVBBXX96'}
+Automobile{year='2000', make=Dodge', model=Viper', color=Red', owner=null', vin=VVBBXX120'}
+Automobile{year='2000', make=Dodge', model=Viper', color=Blue', owner=null', vin=VVBBXX168'}
+Automobile{year='2000', make=Dodge', model=Viper', color=Orange', owner=null', vin=VVBBXX192'}
+Automobile{year='2000', make=Dodge', model=Viper', color=Orange', owner=null', vin=VVBBXX240'}
+Automobile{year='2000', make=Dodge', model=Viper', color=Red', owner=null', vin=VVBBXX264'}
+Automobile{year='2000', make=Dodge', model=Viper', color=Yellow', owner=null', vin=VVBBXX312'}
+Automobile{year='2000', make=Dodge', model=Viper', color=Black', owner=null', vin=VVBBXX336'}
+Automobile{year='2000', make=Dodge', model=Viper', color=Brown', owner=null', vin=VVBBXX384'}
+Automobile{year='2000', make=Dodge', model=Viper', color=Red', owner=null', vin=VVBBXX408'}
+Automobile{year='2000', make=Dodge', model=Viper', color=Amber', owner=null', vin=VVBBXX456'}
+Automobile{year='2000', make=Dodge', model=Viper', color=Blue', owner=null', vin=VVBBXX480'}
+Automobile{year='2000', make=Dodge', model=Viper', color=Green', owner=null', vin=VVBBXX528'}
+Automobile{year='2000', make=Dodge', model=Viper', color=Orange', owner=null', vin=VVBBXX552'}
+Automobile{year='1967', make=Ford', model=Mustang', color=Green', owner=null', vin=AABBCC39'}
+Automobile{year='1967', make=Ford', model=Mustang', color=Green', owner=null', vin=AABBCC585'}
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 7.5</a> at Aug 11, 2022, 4:56:49 PM</p>
+</div>
+</div>
+</body>
+</html>

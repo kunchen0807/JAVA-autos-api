@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: kc-simple-autos
+data:
+  application.properties: |-
+    management.endpoints.web.exposure.include=health

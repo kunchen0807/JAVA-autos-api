@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Secret
+metadata:
+  name: kc-db-secret
+type: Opaque
+data:
+  DB_HOST: dm13YXJlLWRiLmdhbHZhbml6ZWxhYnMubmV0OjMzMDY=
+  DB_NAME: a2NoZW5fZGI=
+  DB_USER: a2NoZW4=
+  DB_PWD: U0hLY2RibE9vMkw3eg==

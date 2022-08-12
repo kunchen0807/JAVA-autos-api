@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.galvanize.autos.AutosServiceTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2022-08-11T23:56:49" hostname="Kuns-Mac-mini.local" time="0.048">
+  <properties/>
+  <testcase name="deleteAuto_byVin()" classname="com.galvanize.autos.AutosServiceTest" time="0.041"/>
+  <testcase name="updateAuto()" classname="com.galvanize.autos.AutosServiceTest" time="0.0"/>
+  <testcase name="getAutos_noParams_returnsList()" classname="com.galvanize.autos.AutosServiceTest" time="0.0"/>
+  <testcase name="getAuto_search_vin_returnsAuto()" classname="com.galvanize.autos.AutosServiceTest" time="0.001"/>
+  <testcase name="getAutos_twoParams_search_returnsList()" classname="com.galvanize.autos.AutosServiceTest" time="0.0"/>
+  <testcase name="addAuto_valid_returnsAuto()" classname="com.galvanize.autos.AutosServiceTest" time="0.001"/>
+  <testcase name="getAutos_color_search_returnsList()" classname="com.galvanize.autos.AutosServiceTest" time="0.0"/>
+  <testcase name="getAutos_make_search_returnsList()" classname="com.galvanize.autos.AutosServiceTest" time="0.001"/>
+  <testcase name="deleteAuto_byVin_notExist()" classname="com.galvanize.autos.AutosServiceTest" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
